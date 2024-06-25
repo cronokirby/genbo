@@ -1,0 +1,10 @@
+[package]
+name = "genbo"
+authors = { workspace = true }
+edition = { workspace = true }
+license = { workspace = true }
+repository = { workspace = true }
+version = { workspace = true }
+
+[dependencies]
+genbo-lib = { workspace = true }

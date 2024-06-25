@@ -1,0 +1,20 @@
+[workspace]
+
+# Needed because we use edition = 2021 in the workspace.
+resolver = "2"
+
+members = [
+  "crates/genbo-lib",
+  "genbo",
+]
+
+# Shared constants for package definitions in the workspace.
+[workspace.package]
+authors = ["Lucas Meier"]
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/cronokirby/genbo"
+version = "0.1.0"
+
+[workspace.dependencies]
+genbo-lib = { path = "crates/genbo-lib" }
